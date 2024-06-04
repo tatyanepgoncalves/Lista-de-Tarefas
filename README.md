@@ -18,13 +18,13 @@ Os usuários são capazes de:
 - Intergir com elementos interativos 
 
 ## Meu processo
-> Criação e estruração do `Index.html` 
-> Criação da pasta `Css` e estruturação com `Sass`
+- Criação e estruração do `Index.html` 
+- Criação da pasta `Css` e estruturação com `Sass`
     - Estruturação inicial da base visual da aplicação
     - Definição das tags para mobile
     - Definição das tags para desktop utilizado `media querie`
-> Criação das pasta `JS`, e criação e estruração do `script.js`
-> Testes para checar o projeto e ajustes finais.
+- Criação das pasta `JS`, e criação e estruração do `script.js`
+- Testes para checar o projeto e ajustes finais.
 
 ### Construído com 
 - HTML5
@@ -32,6 +32,4 @@ Os usuários são capazes de:
 - JS
 
 ### Autor
-
 - LinkedIn - [@tatyanegoncalves](https://www.linkedin.com/in/tatyanegoncalves/)
-<p align="center">Desenvolvido por Tatyane Gonçalves</p>
