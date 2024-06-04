@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$blue: hsl(209, 77%, 23%);
+$lemon-chiffon: hsl(48, 83%, 89%);
+$yellow: hsl(47, 87%, 66%);
+
+
+
+body{
+    background-color: $lemon-chiffon;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 2rem auto;
+    font-size: .9rem;
+}
+
+
+.container {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+
+    h1{
+        text-align: center;
+        color: $blue;
+        font-size: 1.3rem;
+    }
+
+    input{
+        width: calc(100% - 22px);
+        border: 1px solid #ccc;
+    }
+
+    button {
+        width: 100%;
+        background-color: $yellow;
+        border: none;
+        color: #000;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    button:hover{
+        background-color: $blue;
+        color: #fff;
+    }
+
+    input, button {
+        padding: 0.625rem;
+        margin: .313rem 0;
+        border-radius: .313rem;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    
+
+    li.completed {
+        color: $yellow;
+        font-weight: 700;
+    }
+
+    li button {
+        background-color: $blue;
+        border: none;
+        color: #fff;
+        padding: .313rem .625rem;
+        cursor: pointer;
+    }
+    
+    li button:hover {
+        background-color: $yellow;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 1.1rem;
+        margin: 0 auto;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    li {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .313rem;
+    }
+
+    li button {
+        grid-row: 2;
+    }
+}

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  background-color: hsl(48, 83%, 89%);
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 2rem auto;
+  font-size: 0.9rem;
+}
+
+.container {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+}
+.container h1 {
+  text-align: center;
+  color: hsl(209, 77%, 23%);
+  font-size: 1.3rem;
+}
+.container input {
+  width: calc(100% - 22px);
+  border: 1px solid #ccc;
+}
+.container button {
+  width: 100%;
+  background-color: hsl(47, 87%, 66%);
+  border: none;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.container button:hover {
+  background-color: hsl(209, 77%, 23%);
+  color: #fff;
+}
+.container input, .container button {
+  padding: 0.625rem;
+  margin: 0.313rem 0;
+  border-radius: 0.313rem;
+}
+.container ul {
+  list-style-type: none;
+  padding: 0;
+}
+.container li.completed {
+  color: hsl(47, 87%, 66%);
+  font-weight: 700;
+}
+.container li button {
+  background-color: hsl(209, 77%, 23%);
+  border: none;
+  color: #fff;
+  padding: 0.313rem 0.625rem;
+  cursor: pointer;
+}
+.container li button:hover {
+  background-color: hsl(47, 87%, 66%);
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 1.1rem;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.313rem;
+  }
+  li button {
+    grid-row: 2;
+  }
+}/*# sourceMappingURL=style.css.map */
